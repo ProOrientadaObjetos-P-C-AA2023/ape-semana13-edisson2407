@@ -3,9 +3,6 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package paquete004;
-
-import paquete001.Persona;
-
 /**
  *
  * @author reroes

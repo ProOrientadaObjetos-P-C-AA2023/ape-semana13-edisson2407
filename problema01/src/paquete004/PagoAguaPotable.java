@@ -4,8 +4,6 @@
  */
 package paquete004;
 
-import paquete001.Persona;
-
 /**
  *
  * @author reroes

@@ -1,51 +1,39 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package p2;
+    /*
+     * To change this license header, choose License Headers in Project Properties.
+     * To change this template file, choose Tools | Templates
+     * and open the template in the editor.
+     */
+    package p2;
 
-import p1.MatriculaCampamento;
-import p1.MatriculaColegio;
+    import p1.Matricula;
 
-/**
- *
- * @author reroes
- */
-public class TipoMatricula {
-    private double promedioMatriculas;
-    private MatriculaCampamento campamento;
-    private MatriculaColegio colegio;
-    // private MatriculaEscuela escuela;
-    // private MatriculaJardin jardin;
-    // private MatriculaMaternal maternal;
-    // private MatriculaMaternal maternal2;
-    
-    public void establecerMatriculaCampamento(MatriculaCampamento c){
-        campamento = c;
+    /**
+     *
+     * @author reroes
+     */
+    public class TipoMatricula {
+        private double promedioMatriculas;
+        private Matricula campamento;
+        private Matricula colegio;
+        public void setMatriculaCampamento(Matricula c){
+            campamento = c;
+        }
+        public void setMatriculaColegio(Matricula c){
+            colegio = c;
+        }
+        public Matricula getMatriculaCampamento(){
+            return campamento;
+        }
+        public Matricula getMatriculaColegio(){
+            return colegio;
+        }
+        public void setPromedioTarifa(){
+            promedioMatriculas = (getMatriculaCampamento().obtenerTarifa()
+                    + getMatriculaColegio().obtenerTarifa()/2);
+        }
+        public double getPromedioTarifa(){
+            return promedioMatriculas;
+        }
+
+
     }
-    
-    public void establecerMatriculaColegio(MatriculaColegio c){
-        colegio = c;
-    }
-    
-    public MatriculaCampamento obtenerMatriculaCampamento(){
-        return campamento;
-    }
-    
-    public MatriculaColegio obtenerMatriculaColegio(){
-        return colegio;
-    }
-    
-    public void establecerPromedioTarifas(){
-        promedioMatriculas = (obtenerMatriculaCampamento().obtenerTarifa() + 
-                obtenerMatriculaColegio().obtenerTarifa())/2;
-        
-    }
-    
-    public double obtenerPromedioTarifas(){
-        return promedioMatriculas;
-    }
-    
-    
-}

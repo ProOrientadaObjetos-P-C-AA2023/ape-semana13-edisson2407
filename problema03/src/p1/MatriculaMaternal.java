@@ -4,12 +4,11 @@
  * and open the template in the editor.
  */
 package p1;
-
 /**
  *
  * @author reroes
  */
-public class MatriculaMaternal {
+public class MatriculaMaternal implements Matricula{
     private double tarifa;
     
         
@@ -17,7 +16,8 @@ public class MatriculaMaternal {
         // tarifa = costo desayunos + costo almuerzo + costo medico
         tarifa = 50.2 + 40.2 + 80.2;
     }
-        
+    
+    @Override        
     public double obtenerTarifa(){
         return tarifa;
     }

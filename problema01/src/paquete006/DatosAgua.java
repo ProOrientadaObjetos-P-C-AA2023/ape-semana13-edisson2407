@@ -13,7 +13,7 @@ public class DatosAgua {
     
     */
     public static double[][] datosComerciales(){
-        double[][] informacion = {
+        double[][] informacion = {  
             {2.20, 100.2, 0.2},
             {2.30, 50.2, 0.4},
             {3.30, 100.3, 0.1},

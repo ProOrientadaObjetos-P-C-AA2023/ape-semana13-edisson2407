@@ -9,15 +9,13 @@ package p1;
  *
  * @author reroes
  */
-public class MatriculaColegio {
+public class MatriculaColegio implements Matricula{
     private double tarifa;
     
     public void establecerTarifa(){
-        // tarifa = costo deportes + costo folletos + 
-        //          costo uniformes + costo laboratorios
         tarifa = 150.2 + 140.2 + 240.2 + 300.4;
     }
-        
+    @Override        
     public double obtenerTarifa(){
         return tarifa;
     }
